@@ -3,8 +3,10 @@
 namespace Naifmhd\Gazette;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Support\Arr;
 
-class GazetteServiceProvider extends ServiceProvider
+class GazetteServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     /**
      * Perform post-registration booting of services.
