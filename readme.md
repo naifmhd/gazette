@@ -2,8 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/naifmhd/gazette/Tests?label=tests)](https://github.com/naifmhd/gazette/actions?query=workflow%3ATests+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/naifmhd/gazette/Tests?label=build)](https://github.com/naifmhd/gazette/actions?query=workflow%3ATests+branch%3Amaster)
 [![StyleCI](https://github.styleci.io/repos/324795896/shield?branch=master)](https://github.styleci.io/repos/324795896)
 
 This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
