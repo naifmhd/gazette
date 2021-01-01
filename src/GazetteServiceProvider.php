@@ -2,9 +2,8 @@
 
 namespace Naifmhd\Gazette;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Support\DeferrableProvider;
-use Illuminate\Support\Arr;
+use Illuminate\Support\ServiceProvider;
 
 class GazetteServiceProvider extends ServiceProvider implements DeferrableProvider
 {
@@ -33,7 +32,7 @@ class GazetteServiceProvider extends ServiceProvider implements DeferrableProvid
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/gazette.php', 'gazette');
+        $this->mergeConfigFrom(__DIR__.'/../config/gazette.php', 'gazette');
 
         // Register the service the package provides.
         $this->app->singleton('gazette', function ($app) {
@@ -60,7 +59,7 @@ class GazetteServiceProvider extends ServiceProvider implements DeferrableProvid
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__ . '/../config/gazette.php' => config_path('gazette.php'),
+            __DIR__.'/../config/gazette.php' => config_path('gazette.php'),
         ], 'gazette.config');
 
         // Publishing the views.
