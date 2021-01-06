@@ -15,7 +15,7 @@ Via Composer
 $ composer require naifmhd/gazette
 ```
 
-## Setting up the BML Connect credentials
+## Setting up the Gazette API credentials
 
 Add your Gazette API Key and CLIENT ID and CLIENT SECRET to your config/services.php. You can refer to how to get the API Keys from the (Official Gazette API Documentation)[https://api.gazette.gov.mv/].
 
