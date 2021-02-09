@@ -5,6 +5,7 @@ namespace Naifmhd\Gazette;
 use Cache;
 use Http;
 use Illuminate\Support\Arr;
+use Naifmhd\Gazette\Exceptions\GazetteRequestFailedException;
 use Naifmhd\Gazette\Exceptions\GazetteTokenInvalidException;
 
 class Gazette
