@@ -33,7 +33,7 @@ class Gazette
         }
     }
 
-    public function iulaans(int $page = null)
+    public function iulaans(?int $page = null)
     {
         if (is_null($page)) {
             $response = Http::withToken(self::getToken())->get(self::GAZETTE_URL.'iulaan');
@@ -67,7 +67,7 @@ class Gazette
         }
     }
 
-    public function iulaanByType(string $iulaanType, int $page = null)
+    public function iulaanByType(string $iulaanType, ?int $page = null)
     {
         if (is_null($page)) {
             $response = Http::withToken(self::getToken())->get(self::GAZETTE_URL."iulaan/type/{$iulaanType}");
@@ -86,7 +86,7 @@ class Gazette
         }
     }
 
-    public function vazeefaByType(string $vazeefaType, int $page = null)
+    public function vazeefaByType(string $vazeefaType, ?int $page = null)
     {
         if (is_null($page)) {
             $response = Http::withToken(self::getToken())->get(self::GAZETTE_URL."iulaan/type/vazeefaa/category/{$vazeefaType}");
